@@ -1,59 +1,83 @@
-# Scalable Web Application with Authentication & Dashboard
+# 🌐 Scalable Full Stack Web Application
 
-## 📌 Overview
-A full stack web application that includes user authentication and a dashboard system. The project is built using a frontend-backend architecture with secure login functionality and structured API communication.
+A full-stack web application built using **React.js, Node.js, and MySQL** with secure authentication and a protected dashboard system.
 
 ---
 
-## ⚙️ Tech Stack
-- Frontend: reactjs
-- Backend: Node.js 
-- Database: MySQL and MongoDB 
-- Tools: Git, GitHub, Postman
+## 🎯 Project Objective
+
+To build a scalable web application with secure user authentication, role-based access, and a modular frontend-backend architecture.
 
 ---
 
 ## 🚀 Features
-- User registration and login system
-- Secure authentication (JWT or session-based)
-- Protected dashboard access
-- Backend API integration
-- Frontend-backend communication
-- Basic scalable project structure
+
+### 👤 Authentication System
+- User registration and login
+- JWT-based authentication
+- Protected routes for dashboard access
+
+### 📊 Dashboard
+- Secure dashboard access after login
+- Displays user-specific data
+
+### 🔗 API Integration
+- REST APIs built using Node.js
+- Frontend-backend communication using Axios/Fetch
 
 ---
 
-## 🧩 Project Structure
-- frontend/ → UI layer
-- backend/ → API layer
-- database → data storage
-- routes/controllers → backend logic
+## 🛠️ Tech Stack
+
+- Frontend: React.js
+- Backend: Node.js (Express)
+- Database: MySQL
+- Authentication: JWT
+- Tools: Postman, Git, GitHub
+
+---
+
+## 🧩 Architecture
+
+
+Frontend (React)
+↓
+REST API (Node.js + Express)
+↓
+Database (MySQL)
+
 
 ---
 
 ## 🔐 Authentication Flow
+
 1. User registers or logs in  
 2. Backend validates credentials  
-3. Token/session is generated  
-4. Dashboard access is granted  
-5. Protected routes secured  
+3. JWT token is generated  
+4. Token is stored in frontend  
+5. Protected dashboard is accessed  
+
+---
+
+## 📡 API Endpoints (Example)
+
+### Auth
+- POST `/api/register`
+- POST `/api/login`
+
+### Dashboard
+- GET `/api/dashboard` (Protected)
 
 ---
 
 ## ▶️ How to Run
-1. Clone repository  
-2. Install backend dependencies  
-3. Configure database  
-4. Run backend server  
-5. Start frontend  
-6. Access application in browser  
 
----
-
-## ⚠️ Known Issue
-- node_modules should be ignored using .gitignore (recommended fix)
-
----
-
-## 👨‍💻 Author
-Sailakshmi Sirangi
+### Backend
+```bash id="b2k9lz"
+cd backend
+npm install
+npm start
+Frontend
+cd frontend
+npm install
+npm start
