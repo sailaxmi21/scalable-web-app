@@ -6,10 +6,9 @@ A full stack web application that includes user authentication and a dashboard s
 ---
 
 ## ⚙️ Tech Stack
-- Frontend: HTML, CSS, JavaScript (or React.js if used)
-- Backend: Node.js / Spring Boot (use correct one)
-- Database: MySQL / MongoDB (whichever you used)
-- Authentication: JWT (if implemented)
+- Frontend: reactjs
+- Backend: Node.js 
+- Database: MySQL and MongoDB 
 - Tools: Git, GitHub, Postman
 
 ---
